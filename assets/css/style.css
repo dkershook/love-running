@@ -28,7 +28,11 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a
+    box-shadow: 0 2px 2px #3a3a3a;
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+
 }
 
 header a {
@@ -49,6 +53,10 @@ h1 {
     list-style-type: none;
 }
 
+#menu > li {
+    margin-bottom: 1em;
+}
+
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
@@ -62,13 +70,22 @@ nav{
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    top: 100%
 }
 
-#menu > li {
-    margin-bottom: 1em;
+/*Nav toggle*/
+#nav-toggle:checked~nav {
+    display:block;
 }
 
-/* main */
+#nav-toggle {
+    display:none;
+}
+
+.nav-toggle-label {
+    font-size:2rem;
+}
+/* main content*/
 main {
     background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
