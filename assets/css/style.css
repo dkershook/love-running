@@ -29,9 +29,9 @@ h3 {
 }
 
 .hidden-heading {
-display: none;
+    display: none;
 }
-]
+
 
 /* header */
 header {
@@ -175,7 +175,7 @@ hr {
 
 #times div {
     color: #fafafa;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 15px;
     text-align: center;
     /*This will not wrap on screens of less than 400px wide.
@@ -184,13 +184,11 @@ hr {
     flex-grow: 1;
     /*Creates a grid of meetuo time divs over the background image*/
     border: 2px solid white;
-
 }
 
 #times h3 {
-    color: #fafafa; 
+    color: #fafafa;
 }
-
 
 /* footer */
 #social-networks {
@@ -301,8 +299,6 @@ hr {
     }
 
     #benefits-physical>div {
-        align-self: flex-end
+        align-self: flex-end;
     }
-
-
 }
