@@ -214,6 +214,14 @@ hr {
     color: #3a3a3a;
 }
 
+/* Media Query: large or landscape phones (576px and up)*/
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /* Media Query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
 
@@ -244,7 +252,7 @@ hr {
         margin: 0 0.5rem;
     }
 
-    /*main content*/
+    /* main content*/
 
     main {
         /* Push main content down to accomodate larger header*/
@@ -257,7 +265,7 @@ hr {
         right: 50px;
     }
 
-    /* Reasons section*/
+    /* Reasons section */
     #benefits-physical,
     #benefits-mental {
         display: flex;
@@ -274,12 +282,23 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
+
+    /* Gallery */
+    #photos {
+        column-count: 3;
+
+    }
 }
 
 /* Larger devices (laptops and desktops, 992px and up)*/
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 4;
     }
 }
 
